@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+                  * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+
+            body {
+              width: 500px;
+              margin: 10px auto;
+              background-color: #e76767;
+            }
+
+            .form_area {
+              background-color: #fff;
+              padding: 10px 20px;
+              font-family: sans-serif;
+              line-height: 1.1;
+            }
+
+            .main_header {
+              text-align: center;
+              margin-bottom: 15px;
+            }
+
+            h1 {
+              margin-bottom: 10px;
+            }
+
+            #name,
+            #email,
+            #age,
+            #role,
+            #remark {
+              /* display: block; */
+              width: 100%;?
+            }
+
+            .form-field {
+              /* display: block; */
+              margin-bottom: 15px;
+            }
+
+            .label {
+              display: block;
+              font-size: 20px;
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+
+            span {
+              display: flex;
+              gap: 5px;
+              margin-bottom: 2px;
+              font-size: 18px;
+            }
+            .form-field{
+              display:block;
+              margin-bottom:20px;
+            }
+
+            a:link,
+      a:visited {
+        text-decoration: none;
+        color: blue;
+        /* font-size: 14px; */
+      }
+
+      a:hover,
+      a:active {
+        color: orangered;
+      }
+
+      .click{
+        display:inline-block;
+        display:flex;
+        justify-content: space-between;
+
+      }
+    </style>
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <div class="form_area">
+      <header class="main_header">
+        <h1>Survey Form</h1>
+        <p>Thank You For Taking Your Time To Give Us FeedBack</p>
+      </header>
+
+      <form>
+        <div class="form-field">
+          <label for="name" class="label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="email" class="label">Email</label
+          ><input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="age" class="label">Age</label
+          ><input
+            type="text"
+            id="age"
+            name="age"
+            placeholder="Enter Your Age"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="role" class="label"
+            >Choose A Role That Best Describes You</label
+          >
+          <select name="select-role" id="role">
+            <option value="Select Your Role">Select Your Role</option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Driver">Driver</option>
+            <option value="Programmer">Programmer</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="rating" class="label"
+            >Would You Recommend Our Product To A Friend?</label
+          >
+          <span><input type="radio" name="rating" id="rating" />Never</span>
+          <span><input type="radio" name="rating" id="rating" />Maybe</span>
+          <span><input type="radio" name="rating" id="rating" />Likely</span>
+          <span
+            ><input type="radio" name="rating" id="rating" />Definitely</span
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="review" class="label"
+            >Select Things That You Liked About Our Product</label
+          >
+          <span><input type="checkbox" name="review" id="review" />UI</span>
+          <span
+            ><input type="checkbox" name="review" id="review" />Features</span
+          >
+          <span
+            ><input type="checkbox" name="review" id="review" />Service</span
+          >
+          <span
+            ><input type="checkbox" name="review" id="review" />Simpleness</span
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="remark" class="label">Remarks</label
+          ><textarea
+            name="remark"
+            id="remark"
+            placeholder="Tell Us How We Can Improve.."
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="click">
+            <input type="submit" />
+            <a href="index.html">Return to Index</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
